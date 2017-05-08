@@ -60,7 +60,7 @@ function createPoll(db) {
          }
          console.log("search term is: ", search_term);
          Users
-            .find(search_term).exec(function (err, result) {
+            .find(search_term).sort({'google.created': -1}).exec(function (err, result) {
                         console.log("Inside exec");
                         if (err) { throw err; }
         
