@@ -165,8 +165,7 @@
                             <div class="row">
                                   <div class="wrapper text-center">
                                     <div class="col-xs-6">
-                                    var data = <%- data = [data.Questions,data.Votes, data.creator, data.current_user, data.id, data.Name] %>
-                                      <% if(data[2] === data[3]) {%>
+                                      <% if(data.creator === data.current_user) {%>
                               							<form role="form" action="/poll/delete/<%= data[4] %>" id="DeletePollForm" method="get">
                                              		<button type="submit" name="deleteButton" value="deleteButton" class="btn btn-warning" id="deletePollButton" style=" border-radius: 8px; font-size: 14px">
                                              		    Delete
