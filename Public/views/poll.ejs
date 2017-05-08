@@ -32,7 +32,6 @@
                   e.preventDefault(); //STOP default action
                   e.unbind(); //unbind. to stop multiple form submit.
                 });
-              
           });
 
     });
@@ -161,20 +160,13 @@
                                     </div>
                                 </div>
                             </div>
+                            
                             <!--Create Delete and social network - Twitter- sharing button -->
                             <div class="row">
                                   <div class="wrapper text-center">
-                                    <div class="col-xs-6">
+                                    <div class="col-xs-6" id="del">
 
-                                      if(data[2] === data[3]){
-                              							<form role="form" action="/poll/delete/<%= data[4] %>" id="DeletePollForm" method="get">
-                                             		<button type="submit" name="deleteButton" value="deleteButton" class="btn btn-warning" id="deletePollButton" style=" border-radius: 8px; font-size: 14px">
-                                             		    Delete
-                                             		    <span class="glyphicon glyphicon-trash" style="font-size: 10px; margin: 2px"></span>
-                                             		</button>
-                          						      </form>
-                          						      
-                          					} 
+
                           					 
                                    </div>
                                   
