@@ -73,7 +73,7 @@
    
    // When ready, refresh the open url'
    var lastFive = window.location.href.substr(window.location.href.length - 5);
-   if (lastFive === '/true' || lastFive === '/false' || lastFive === 'gedin'){
+   if (lastFive === '/true' || lastFive === 'false' || lastFive === 'gedin'){
       ready(ajaxRequest('GET', window.location.href , createPollList));
    }
    else{
