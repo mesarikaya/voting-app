@@ -10,9 +10,7 @@ var ejs = require("ejs");
 
 //Introduce packages for oAuth
 var passport = require('passport');
-//var GoogleAuth = require('google-auth-library');
-//var auth = new GoogleAuth;
-//var client = new auth.OAuth2(process.env.CLIENT_ID, '', '');
+
 
 var app = express();
 require('dotenv').load();
@@ -30,11 +28,8 @@ app.use(express.static(process.cwd() + "/Controllers"));
 app.use(express.static(process.cwd() + "/Public"));
 app.set('views', __dirname + '/Public/views');
 app.engine('html', ejs.renderFile); 
-//app.use(express.logger());
-//app.use(express.cookieParser());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
-//app.use(express.methodOverride());
 
 app.use(session({
 	secret: 'my_precious',
