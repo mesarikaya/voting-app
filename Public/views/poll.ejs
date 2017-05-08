@@ -165,8 +165,8 @@
                             <div class="row">
                                   <div class="wrapper text-center">
                                     <div class="col-xs-6">
-                                    data.creator
-                                    data.current_user
+                                    <%-data.creator%>
+                                    <%-data.current_user%>
                                       <% if(data.creator === data.current_user) {%>
                               							<form role="form" action="/poll/delete/<%= data[4] %>" id="DeletePollForm" method="get">
                                              		<button type="submit" name="deleteButton" value="deleteButton" class="btn btn-warning" id="deletePollButton" style=" border-radius: 8px; font-size: 14px">
