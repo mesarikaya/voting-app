@@ -12,7 +12,7 @@
    var user_polls = document.querySelector('#User_polls');
    var submit_button = document.querySelector('#submitButton');
    var user = document.querySelector('#username');
-   var apiUrl = 'https://voting-poll-mesarikaya.c9users.io/loggedin';
+   var apiUrl = 'https://voting-app-website.herokuapp.com/loggedin';
    
    //Run the function sent via AJAX
    function ready (fn) {
