@@ -10,7 +10,7 @@
    var view_polls = document.querySelector('#View_polls');
    var submit_button = document.querySelector('#submitButton');
    var New_Entry_Form = document.querySelector('#NewEntryForm');
-   var apiUrl = 'https://voting-poll-mesarikaya.c9users.io/home';
+   var apiUrl = 'https://voting-app-website.herokuapp.com/home';
    
    //Run the function sent via AJAX
    function ready (fn) {
