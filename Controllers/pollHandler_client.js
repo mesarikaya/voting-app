@@ -4,7 +4,7 @@
    var apiUrl = window.location.href;
    var submitVoteButton = document.querySelector('#submitVoteButton');
    var voteForm = document.querySelector('#VoteForm');
-
+   var deletePart = document.querySelector('#del');
    
    function ready (fn) {
       if (typeof fn !== 'function') {
@@ -43,7 +43,13 @@
           results.push([questions[i], votes[i]]);
       }
 
-      console.log("Poll results are ", results);
+      //Create delete button
+      if(poll_data[2] === poll_data[3]){
+    	      var deleteButton = '<form role="form" action="/poll/delete/<%= data[4] %>" id="DeletePollForm" method="get">' +
+    	                           '<button type="submit" name="deleteButton" value="deleteButton" class="btn btn-warning" id="deletePollButton" style=" border-radius: 8px; font-size: 14px">' +
+    	                           'Delete' + '<span class="glyphicon glyphicon-trash" style="font-size: 10px; margin: 2px"></span></button> </form>';
+			   deletePart.innerHTML=deleteButton;
+		}
       
       // Load the Visualization API and the corechart package.
       google.charts.load('current', {'packages':['corechart']});
