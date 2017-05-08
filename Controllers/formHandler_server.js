@@ -53,7 +53,7 @@ function createPoll(db) {
          var search_term = {};
          //console.log("View all: " ,viewAll, viewAll === 'false',viewAll === 'true', typeof ViewAll );
          if (viewAll === 'false'){
-            search_term = {"google.name":req.user.google.name};
+            search_term = {'google.oauthID': req.user.google.oauthID};
          }
          else{
             search_term = {};
