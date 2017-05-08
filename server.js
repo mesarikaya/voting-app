@@ -29,8 +29,7 @@ mongoose.Promise = global.Promise;
 app.use(express.static(process.cwd() + "/Controllers"));
 app.use(express.static(process.cwd() + "/Public"));
 app.set('views', __dirname + '/Public/views');
-app.engine('html', ejs.renderFile);
-app.set('view engine', 'ejs');
+app.engine('html', ejs.renderFile); 
 //app.use(express.logger());
 //app.use(express.cookieParser());
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -55,7 +54,7 @@ app.use(passport.session());
 //call the app
 routes(app, passport);
     
-var port = process.env.PORT || 8080;
+var port = process.env.PORT || 8000;
 
     
 app.listen(port, function() {
