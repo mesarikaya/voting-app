@@ -10,26 +10,7 @@
   
   <script>
     $(document).ready(function(){
-        /*$("#New_Poll").click(function(){
-            $("#myModal").modal();
-        });
-        $( "#all-polls" ).hide();
-        $( "#View_Polls" ).click(function() {
-          $( "#all-polls" ).toggle( 50, function() {
-            // Animation complete.
-          });
-        });
-        
-        $( "#User_Polls" ).click(function() {
-          $( "#all-polls" ).toggle( 50, function() {
-            // Animation complete.
-          });
-        });*/
-            
         $('#submitButton').on('click', function() {
-             //alert($(poll_name).val());
-             //alert($(options).val());
-             alert("submitting the new entry form.")
              $('#NewEntryForm').submit();
          });
     });
@@ -172,7 +153,7 @@
                     <div class="modal-content">
                       <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal">&times;</button>
-                        <h4 style="color:red;">Add New Poll</h4>
+                        <h4 style="color:Black;">Add New Poll</h4>
                       </div>
                       <div class="modal-body">
                         <form role="form" id="NewEntryForm" action="/loggedin" method="post" >

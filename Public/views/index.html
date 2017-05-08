@@ -21,15 +21,11 @@
         });
         
         $('#submitButton').on('click', function() {
-             //alert($(poll_name).val());
-             //alert($(options).val());
              $('#NewEntryForm').submit();
    
          });
          
           $('#submitVoteButton').on('click', function() {
-               //alert($(poll_name).val());
-               //alert($(options).val());
               
                $('#VoteForm').submit(function(e){
                   //alert("in the ajax part);")
@@ -198,7 +194,6 @@
     </nav>
 
      <!-- Log in modal -->
-        
     <div class="modal fade" id="myLoginModal" role="dialog">
           <div class="modal-dialog">
             <div class="modal-content">
@@ -213,8 +208,8 @@
             </div>
           </div>
     </div>
+    
     <!-- Log in modal close -->
-        
     <div class="well well-lg" id="ActionChoice">
       <div class="row">
         <p id="title"> Welcome </p>
@@ -232,11 +227,11 @@
                       <div class="modal-content">
                         <div class="modal-header" style="background: transparent">
                             <button type="button" class="close" data-dismiss="modal">&times;</button>
-                            <h3 style="color:black;font-size: 18px;background:white; margin: 4px">One-click Sign In</h4>
-                            <h3 style="color:grey;font-size: 14px;background:white; margin:none">(We won't share anything without your permission)</h4>
+                            <h3 style="color:black;font-size: 20px;background:white; margin: 4px"><strong>One-click Sign In</strong></h4>
+                            <h3 style="color:grey;font-size: 16px;background:white; margin:none">(We won't share anything without your permission)</h4>
                         </div>
                         <div class="modal-body">
-                             <a href="/auth/google"> Login via Google </a>
+                             <a href="/auth/google"> <strong>Login via Google</strong> </a>
                         </div>
                       </div>
                     </div>
