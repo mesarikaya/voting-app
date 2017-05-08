@@ -164,17 +164,16 @@
                             <!--Create Delete and social network - Twitter- sharing button -->
                             <div class="row">
                                   <div class="wrapper text-center">
-                                        <div class="col-xs-6">
-                                      <% if(data[2] === data[3]) {%>
+                                    <div class="col-xs-6">
+                                        <% if(data[2] === data[3]) {%>
                               							<form role="form" action="/poll/delete/<%= data[4] %>" id="DeletePollForm" method="get">
                                              		<button type="submit" name="deleteButton" value="deleteButton" class="btn btn-warning" id="deletePollButton" style=" border-radius: 8px; font-size: 14px">
                                              		    Delete
                                              		    <span class="glyphicon glyphicon-trash" style="font-size: 10px; margin: 2px"></span>
                                              		</button>
-                          						      </form>
-                          						      
-                          					<% } %> 
-                                  </div>
+                          						      </form>    
+                          					   <% } %> 
+                                   </div>
                                   
                                   <div class="col-xs-6">
                                     <a href='https://twitter.com/share?text=Poll: <%= data[5] %>' class="twitter-share-button" data-size="large" data-show-count="false" style="width: 15%;margin: 2px; border-radius: 16px; font-size: 16px">Tweet</a>
