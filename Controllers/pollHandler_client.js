@@ -45,7 +45,7 @@
 
       //Create delete button
       if(poll_data[2].toString() === poll_data[3].toString()){
-    	      var deleteButton = '<form role="form" action="/poll/delete/'+ poll_data[4] +' id="DeletePollForm" method="get">' +
+    	      var deleteButton = '<form role="form" action="/poll/delete/'+ poll_data[4] +'" id="DeletePollForm" method="get">' +
     	                           '<button type="submit" name="deleteButton" value="deleteButton" class="btn btn-warning" id="deletePollButton" style=" border-radius: 8px; font-size: 14px">' +
     	                           'Delete' + '<span class="glyphicon glyphicon-trash" style="font-size: 10px; margin: 2px"></span></button> </form>';
 	      deletePart.innerHTML=deleteButton;
