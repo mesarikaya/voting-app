@@ -1,4 +1,4 @@
-## voting-app
+# voting-app
 
 This project aims to enable user to participate in existing user polls or create their own.
 
